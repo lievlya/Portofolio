@@ -141,8 +141,29 @@
     }
 
     .gallery-item img {
+      max-width: 90%;
+      max-height: 300px;
+      width: auto;
+      height: auto;
+      object-fit: contain;
+      display: block;
+      margin: 1rem auto 0 auto;
+      border-radius: 10px;
+      background-color: #f6f6f6;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    }
+
+    .gallery-item img:hover {
+      transform: scale(1.02);
+      transition: 0.3s ease;
+    }
+
+    .gallery-item img {
       width: 100%;
       height: auto;
+      max-height: 400px;
+      object-fit: contain;
+      background-color: #f0f0f0;
       display: block;
       border-bottom: 1px solid #eee;
     }
@@ -246,12 +267,12 @@
     <div class="gallery">
       <div class="gallery-item">
         <img src="image-mc.jpeg" alt="MC Seminar Teknologi" />
-        <div class="caption">MC Seminar Teknologi</div>
+        <div class="caption">MC Studi Banding Antar Kampus</div>
       </div>
 
       <div class="gallery-item">
         <img src="image-volunter.jpeg" alt="Workshop UI/UX" />
-        <div class="caption">Workshop UI/UX</div>
+        <div class="caption">Kegiatan Volunter</div>
       </div>
     </div>
   </section>
